@@ -1,0 +1,29 @@
+{
+    "name": "coderden/trust-token",
+    "description": "TrustToken auth package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Coderden\\TrustToken\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis Sinyukov",
+            "email": "dnsinyukov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "ext-openssl": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coderden\\TrustToken\\PackageServiceProvider"
+            ]
+        }
+    }
+}
